@@ -1,8 +1,15 @@
 {
     "name": "Instanews",
-    "description": "description",
+    "description": "my project 2.",
     "authors": "author",
     "version": "1.0.0",
-    "main": "pathToMain",
-    "dependencies": {}
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "browser-sync": "^2.23.7",
+        "gulp": "^4.0.0",
+        "gulp-eslint": "^4.0.2",
+        "gulp-rename": "^1.2.2",
+        "gulp-uglify": "^3.0.0"
+    }
 }
