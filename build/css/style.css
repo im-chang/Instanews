@@ -346,7 +346,6 @@ li {
               flex: 0 1 100%; } }
 
 .container {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,6 +405,10 @@ li {
 select {
   background-color: #fff; }
 
+.items img {
+  height: 420px;
+  max-width: 100%; }
+
 .grid ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,20 +438,6 @@ footer {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 38px; }
-
-.items {
-  display: block;
-  height: 420px;
-  background-position: 50%;
-  background-size: cover;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
 
 .grid {
   margin: 0 auto;
