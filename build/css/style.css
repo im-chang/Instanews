@@ -378,7 +378,6 @@ li {
   padding: 2rem; }
 
 .logo {
-  text-align: center;
   margin-bottom: 1rem;
   -webkit-transition: all 0.5s ease 0.5s;
   transition: all 0.5s ease 0.5s; }
@@ -403,8 +402,20 @@ li {
   .search p {
     display: block;
     margin-top: 0px; }
-  .search select {
-    background-color: #fff; }
+
+select {
+  background-color: #fff; }
+
+.grid ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2rem;
+  list-style: none; }
 
 footer {
   color: #c2c2c2;
@@ -425,12 +436,59 @@ footer {
           transform: translate(-50%, -50%);
   width: 38px; }
 
+.items {
+  display: block;
+  height: 420px;
+  background-position: 50%;
+  background-size: cover;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.grid {
+  margin: 0 auto;
+  max-width: 100%; }
+
+.grid-items {
+  margin: 0 auto; }
+
+#articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+.pnews {
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  font-size: 1rem;
+  padding: .5rem;
+  width: 100%; }
+
 body {
   background-color: black;
   margin: 0;
   line-height: 1;
   height: 100vh;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  overflow-x: hidden; }
 
 @media (min-width: 1000px) {
   .site-header {

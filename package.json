@@ -1,10 +1,12 @@
 {
-    "name": "Instanews",
+    "name": "instanews",
     "description": "my project 2.",
     "authors": "author",
     "version": "1.0.0",
     "main": "index.js",
-    "dependencies": {},
+    "dependencies": {
+        "npm": "^6.0.0"
+    },
     "devDependencies": {
         "browser-sync": "^2.23.7",
         "gulp": "^4.0.0",
