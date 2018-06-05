@@ -7,6 +7,16 @@ var gulp = require("gulp"),
   autoprefixer = require("gulp-autoprefixer"),
   cssnano = require("gulp-cssnano"),
   rename = require("gulp-rename");
+  babel = require("gulp-babel");
+
+// gulp.task("babel", () => {
+//   return gulp
+//     .src("./js/main.js")
+//     .pipe(babel({
+//       presets: ['env']
+//     }))
+//     .pipe(gulp.dest("./build/js/babel.js"));
+//   });
 
 gulp.task("sass", function() {
   return gulp
@@ -31,11 +41,12 @@ gulp.task("lint", function() {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task(
-  "scripts",
-  gulp.series("lint", function() {
+gulp.task("scripts", gulp.series("lint", function() {
     return gulp
       .src("./js/*.js")
+      .pipe(babel({
+        presets: ['env']
+    }))
       .pipe(uglify())
       .pipe(rename({ extname: ".min.js" }))
       .pipe(gulp.dest("./build/js"));
