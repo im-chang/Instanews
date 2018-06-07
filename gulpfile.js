@@ -1,6 +1,5 @@
 var gulp = require("gulp"),
   uglify = require("gulp-uglify"),
-  // rename = require("gulp-rename"),
   browserSync = require("browser-sync"),
   eslint = require("gulp-eslint"),
   sass = require("gulp-sass"),
@@ -8,15 +7,6 @@ var gulp = require("gulp"),
   cssnano = require("gulp-cssnano"),
   rename = require("gulp-rename");
   babel = require("gulp-babel");
-
-// gulp.task("babel", () => {
-//   return gulp
-//     .src("./js/main.js")
-//     .pipe(babel({
-//       presets: ['env']
-//     }))
-//     .pipe(gulp.dest("./build/js/babel.js"));
-//   });
 
 gulp.task("sass", function() {
   return gulp
