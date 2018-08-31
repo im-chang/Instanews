@@ -2,6 +2,11 @@
 
 The objective of this project is to create a responsive website that allows the user to navigate through different news articles by selecting their preferred categories using New York Times API.
 
+# ScreenShots: 
+
+![instanews screens](https://user-images.githubusercontent.com/38142960/44937939-b1556800-ad30-11e8-9ac1-53918b3854f7.jpg)
+
+
 # Technologies Used:
 
 SASS.
